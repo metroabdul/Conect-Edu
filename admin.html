@@ -8,7 +8,7 @@
 </head>
 <body>
   <div class="dashboard-container">
-    <aside class="sidebar">
+    <aside class="sidebar" id="sidebar">
       <div class="sidebar-header">
         <h2>Conect Edu</h2>
       </div>
@@ -26,6 +26,7 @@
     
     <main class="dashboard-main">
       <header class="dashboard-header">
+        <button class="menu-toggle" id="menuToggle" aria-label="Open sidebar">☰</button>
         <h1>Admin Dashboard</h1>
         <div class="user-info">
           <img id="userAvatar" src="assets/default-avatar.jpg" alt="User">
@@ -66,9 +67,7 @@
                 <th>Date</th>
                 <th>Status</th>
                 <th>Actions</th>
-              </br>
               </tr>
-              </thead>
             </thead>
             <tbody>
               <!-- Enrollments will be loaded here -->
@@ -78,9 +77,6 @@
       </section>
     </main>
   </div>
-
-  <script type="module">
-   
-  </script>
+  <script type="module" src="main.js"></script>
 </body>
 </html>
