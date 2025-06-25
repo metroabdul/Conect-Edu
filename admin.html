@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPlatform - Admin Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Conect Edu</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active"><span>🏠</span> Dashboard</a>
+        <a href="#students"><span>👥</span> Students</a>
+        <a href="#courses"><span>📚</span> Courses</a>
+        <a href="#institutions"><span>🏫</span> Institutions</a>
+        <a href="#enrollments"><span>📝</span> Enrollments</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="btn btn-outline">Logout</button>
+      </div>
+    </aside>
+    
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <h1>Admin Dashboard</h1>
+        <div class="user-info">
+          <img id="userAvatar" src="assets/default-avatar.jpg" alt="User">
+          <span id="userName">Admin</span>
+        </div>
+      </header>
+      
+      <section class="dashboard-section">
+        <h2>Quick Stats</h2>
+        <div class="stats-grid">
+          <div class="stat-card">
+            <h3 id="totalStudents">0</h3>
+            <p>Total Students</p>
+          </div>
+          <div class="stat-card">
+            <h3 id="totalCourses">0</h3>
+            <p>Total Courses</p>
+          </div>
+          <div class="stat-card">
+            <h3 id="pendingEnrollments">0</h3>
+            <p>Pending Enrollments</p>
+          </div>
+          <div class="stat-card">
+            <h3 id="totalInstitutions">0</h3>
+            <p>Institutions</p>
+          </div>
+        </div>
+      </section>
+      
+      <section class="dashboard-section" id="enrollmentsSection">
+        <h2>Recent Enrollment Requests</h2>
+        <div class="table-responsive">
+          <table id="enrollmentsTable">
+            <thead>
+              <tr>
+                <th>Student</th>
+                <th>Course</th>
+                <th>Date</th>
+                <th>Status</th>
+                <th>Actions</th>
+              </br>
+              </tr>
+              </thead>
+            </thead>
+            <tbody>
+              <!-- Enrollments will be loaded here -->
+            </tbody>
+          </table>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+   
+  </script>
+</body>
+</html>

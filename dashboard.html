@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EduPlatform - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="dashboard-container">
+    <aside class="sidebar">
+      <div class="sidebar-header">
+        <h2>Conect Edu</h2>
+      </div>
+      <nav class="sidebar-nav">
+        <a href="#" class="active"><span>🏠</span> Dashboard</a>
+        <a href="#profile"><span>👤</span> Profile</a>
+        <a href="#courses"><span>📚</span> My Courses</a>
+        <a href="#documents"><span>📁</span> Documents</a>
+        <a href="#payments"><span>💳</span> Payments</a>
+      </nav>
+      <div class="sidebar-footer">
+        <button id="logoutBtn" class="btn btn-outline">Logout</button>
+      </div>
+    </aside>
+    
+    <main class="dashboard-main">
+      <header class="dashboard-header">
+        <h1>Student Dashboard</h1>
+        <div class="user-info">
+          <img id="userAvatar" src="assets/default-avatar.jpg" alt="User">
+          <span id="userName">Loading...</span>
+        </div>
+      </header>
+      
+      <section class="dashboard-section" id="profileSection">
+        <h2>Profile Information</h2>
+        <div class="profile-form">
+          <div class="form-group">
+            <label>Full Name</label>
+            <input type="text" id="fullName" disabled>
+          </div>
+          <div class="form-group">
+            <label>Email</label>
+            <input type="email" id="userEmail" disabled>
+          </div>
+          <button id="editProfileBtn" class="btn btn-primary">Edit Profile</button>
+        </div>
+        
+        <div class="document-upload">
+          <h3>Upload Documents</h3>
+          <input type="file" id="documentUpload">
+          <button id="uploadBtn" class="btn btn-small">Upload</button>
+          <div class="documents-list" id="documentsList">
+            <!-- Documents will be listed here -->
+          </div>
+        </div>
+      </section>
+      
+      <section class="dashboard-section" id="coursesSection">
+        <h2>My Courses</h2>
+        <div class="courses-grid" id="coursesGrid">
+          <!-- Enrolled courses will be listed here -->
+        </div>
+        
+        <h3>Available Courses</h3>
+        <div class="courses-grid" id="availableCoursesGrid">
+          <!-- Available courses will be listed here -->
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script type="module">
+   
+  </script>
+</body>
+</html>
